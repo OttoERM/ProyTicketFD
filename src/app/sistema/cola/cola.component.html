@@ -1,0 +1,31 @@
+<div nz-row nzJustify="center" nzAlign="middle">
+    <div nz-col nzSpan="24" nzJustify="center">
+        <h1>Cola</h1>
+    </div>
+  </div>
+  <div nz-row>
+    <div nz-col nzSpan="24"></div><button nz-button nzType="primary" (click)="eliminar()" >Llamar Siguiente</button>
+  </div>
+  <hr>
+  <nz-table #basicTable [nzData]="tickets">
+    <thead>
+      <tr>
+        <th>Id</th>
+        <th>Numero de Id</th>
+        <th>Codigo</th>
+        <th>Tipo</th>
+        <th>Pref</th>
+        <th>Fecha</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let data of basicTable.data">
+        <td>{{ data.id }}</td>
+        <td>{{ data.numId }}</td>
+        <td>{{ data.codigo }}</td>
+        <td>{{ data.tipo }}</td>
+        <td>{{ data.pref }}</td>
+        <td>{{ data.fecha }}</td>
+      </tr>
+    </tbody>
+  </nz-table>

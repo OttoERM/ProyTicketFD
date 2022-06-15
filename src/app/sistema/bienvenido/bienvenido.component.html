@@ -1,0 +1,7 @@
+ <nz-carousel [nzEffect]='"scrollx"' [nzAutoPlay]="true">
+      <div nz-carousel-content *ngFor="let item of arrayOfImgUrls">
+        <img [src]='item' style="position: center;">
+      </div>
+</nz-carousel>
+<br>
+<button nz-button nzType="primary" routerLink="/sistema/tickets">Obtenga su ticket</button>

@@ -1,0 +1,29 @@
+<form nz-form [nzLayout]="'vertical'" [formGroup]="validateForm" (ngSubmit)="submitForm()">
+    <nz-form-item>
+        <nz-form-label [nzSm]="8" [nzXs]="24">Numero de ID:</nz-form-label>
+      <nz-form-control nzErrorTip="Escriba su numero de identidad!">
+        <nz-input-group nzPrefixIcon="user">
+          <input formControlName="numId" nz-input placeholder="Numero de identidad"/>
+        </nz-input-group>
+      </nz-form-control>
+    </nz-form-item>
+    <nz-form-item>
+      <nz-form-label [nzSm]="8" [nzXs]="24">tipo:</nz-form-label>
+      <nz-form-control [nzSm]="16" [nzXs]="24">
+        <nz-select ngModel="lucy" nzAllowClear nzPlaceHolder="Escoja" formControlName="tipo">
+          <nz-option nzValue="Caja" nzLabel="Caja"></nz-option>
+          <nz-option nzValue="Servicio Al cliente" nzLabel="Servicio Al cliente"></nz-option>
+        </nz-select>
+      </nz-form-control>
+    </nz-form-item>
+    
+    <nz-form-item>
+      <label nz-checkbox formControlName="pref">Preferencial</label>
+    </nz-form-item>
+
+    <nz-form-item>
+      <nz-form-control>
+        <button nz-button nzType="primary" >Ingresar Datos</button>
+      </nz-form-control>
+    </nz-form-item>
+  </form>

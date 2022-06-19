@@ -24,13 +24,15 @@ import { NzRadioModule } from 'ng-zorro-antd/radio';
 import { NzSelectModule } from 'ng-zorro-antd/select';
 import { NzCheckboxModule } from 'ng-zorro-antd/checkbox';
 import { ColaComponent } from './cola/cola.component';
+import { ListaEsperaComponent } from './lista-espera/lista-espera.component';
 
 @NgModule({
   declarations: [
     BienvenidoComponent,
     ManejoComponent,
     TicketsComponent,
-    ColaComponent
+    ColaComponent,
+    ListaEsperaComponent
   ],
   imports: [
     CommonModule,
